@@ -7,12 +7,16 @@ import { Button } from "@/components/ui/button"
 
 const carouselItems = [
   {
+    image: "/images/ep1 copy/661744349108_.pic_hd.jpg",
+    alt: "Scenic Shanghai City New Photo",
+  },
+  {
     image: "/images/shanghai-skyline.png",
     alt: "Shanghai Skyline with Oriental Pearl Tower",
   },
   {
-    image: "/placeholder.svg?height=600&width=1600",
-    alt: "The Bund",
+    image: "/images/ep1 copy/721744350365_.pic_hd.jpg",
+    alt: "Shanghai Modern Cityscape",
   },
   {
     image: "/placeholder.svg?height=600&width=1600",
