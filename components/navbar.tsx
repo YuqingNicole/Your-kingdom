@@ -18,10 +18,7 @@ const routes = [
     href: "/tours",
     label: "Tours",
   },
-  {
-    href: "/destinations",
-    label: "Destinations",
-  },
+
 ]
 
 export default function Navbar() {
@@ -33,7 +30,7 @@ export default function Navbar() {
       <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <div className="relative h-10 w-10 overflow-hidden rounded-full border border-primary/20">
-            <Image src="/placeholder.svg?height=40&width=40" alt="Your Kingdom logo" width={40} height={40} />
+            <Image src="/images/logo.png" alt="Your Kingdom logo" width={40} height={40} />
           </div>
           <span className="text-xl font-bold tracking-tight">Your Kingdom</span>
         </Link>
@@ -52,12 +49,11 @@ export default function Navbar() {
           ))}
         </nav>
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="outline" size="sm" className="h-9 px-4 rounded-full">
-            Sign In
-          </Button>
-          <Button size="sm" className="h-9 px-4 rounded-full">
-            Book Now
-          </Button>
+          <Link href="/contact">
+            <Button size="sm" className="h-9 px-4 rounded-full">
+              Book Now
+            </Button>
+          </Link>
         </div>
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger asChild className="md:hidden">
@@ -82,10 +78,9 @@ export default function Navbar() {
                 </Link>
               ))}
               <div className="flex flex-col gap-2 mt-4">
-                <Button variant="outline" size="sm">
-                  Sign In
-                </Button>
-                <Button size="sm">Book Now</Button>
+                <Link href="/contact">
+                  <Button size="sm" className="w-full">Book Now</Button>
+                </Link>
               </div>
             </div>
           </SheetContent>

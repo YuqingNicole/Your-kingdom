@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Facebook, Instagram, Twitter } from "lucide-react"
+import { Facebook, Instagram } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -20,10 +20,7 @@ export default function Footer() {
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
+
             </div>
           </div>
           <div className="space-y-4">
@@ -51,18 +48,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="space-y-4">
-            <h3 className="text-sm font-bold">Newsletter</h3>
-            <p className="text-sm text-muted-foreground">
-              Subscribe to our newsletter for travel tips and exclusive offers.
-            </p>
-            <div className="flex space-x-2">
-              <Input type="email" placeholder="Your email" className="max-w-[220px] rounded-full h-9" />
-              <Button type="submit" size="sm" className="rounded-full h-9">
-                Subscribe
-              </Button>
-            </div>
-          </div>
+
         </div>
         <div className="mt-10 border-t pt-6 text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Your Kingdom. All rights reserved.</p>

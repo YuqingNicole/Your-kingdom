@@ -11,11 +11,11 @@ const carouselItems = [
     alt: "Shanghai Skyline with Oriental Pearl Tower",
   },
   {
-    image: "/placeholder.svg?height=600&width=1600",
+    image: "/images/ep1 copy/661744349108_.pic_hd.jpg",
     alt: "The Bund",
   },
   {
-    image: "/placeholder.svg?height=600&width=1600",
+    image: "/images/ep1 copy/721744350365_.pic_hd.jpg",
     alt: "Yu Garden",
   },
 ]

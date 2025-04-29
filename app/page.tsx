@@ -5,7 +5,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Clock, Star, Users } from "lucide-react"
 import HeroCarousel from "@/components/hero-carousel"
 import FeaturedTours from "@/components/featured-tours"
-import PromotionBanner from "@/components/promotion-banner"
 
 export default function Home() {
   return (
@@ -90,8 +89,7 @@ export default function Home() {
 
       {/* Promotion Banner */}
       <section className="container">
-        <PromotionBanner />
-      </section>
+        </section>
 
       {/* Why Choose Us */}
       <section className="container">
@@ -156,9 +154,12 @@ export default function Home() {
             <Button size="lg" className="bg-white text-primary hover:bg-white/90 rounded-full">
               Browse Tours
             </Button>
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 rounded-full">
-              Contact Us
-            </Button>
+            <Button
+  size="lg"
+  className="bg-black text-white hover:bg-neutral-800 border-none rounded-full transition-colors duration-200"
+>
+  Contact Us
+</Button>
           </div>
         </div>
       </section>
