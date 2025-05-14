@@ -6,6 +6,8 @@ import { Clock, Star, Users } from "lucide-react"
 import HeroCarousel from "@/components/hero-carousel"
 import FeaturedTours from "@/components/featured-tours"
 
+import ExploreToursButton from "../components/explore-tours-button";
+
 export default function Home() {
   return (
     <div className="flex flex-col gap-16 pb-16">
@@ -18,9 +20,7 @@ export default function Home() {
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto artistic-subtitle">
               Immerse yourself in the perfect blend of tradition and modernity with our curated travel experiences
             </p>
-            <Button size="lg" className="text-base rounded-full px-8">
-              Explore Tours
-            </Button>
+            <ExploreToursButton />
           </div>
         </div>
       </section>
@@ -77,7 +77,7 @@ export default function Home() {
       </section>
 
       {/* Featured Tours */}
-      <section className="container">
+      <section id="tours-section" className="container py-16">
         <div className="flex flex-col gap-2 text-center mb-10">
           <h2 className="text-3xl artistic-title artistic-heading">Popular Tour Packages</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto artistic-subtitle">

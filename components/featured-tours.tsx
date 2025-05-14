@@ -59,7 +59,7 @@ export const tours = [
     reviews: [
       {
         id: 1,
-        name: "Guest A",
+        name: "Yujie",
         country: "China",
         avatar: "/placeholder.svg?height=80&width=80",
         rating: 5,
@@ -68,7 +68,7 @@ export const tours = [
       },
       {
         id: 2,
-        name: "Guest B",
+        name: "Nicole",
         country: "USA",
         avatar: "/placeholder.svg?height=80&width=80",
         rating: 4,
@@ -245,6 +245,75 @@ Dongcheng Ancient Village is named after the famous poet Xie Lingyun from the Ea
       "2025-06-01"
     ],
     maxGroupSize: 20
+  },
+  {
+    id: 8,
+    title: "Multidimensional Space City Walk on Yuyuan Road",
+    image: "/images/ep4/5.png",
+    images: [
+      "/images/ep4/4.png",
+      "/images/ep4/5.png",
+      "/images/ep4/6.jpeg",
+      "/images/ep4/7.png"
+    ],
+    duration: "3 hours tour",
+    location: "Shanghai",
+    rating: 4.9,
+    reviewCount: 1,
+    price: 30,
+    popular: true,
+    description: `Decoding the Multidimensional Time and Space of Modern Shanghai Revolutionary History.`,
+    itinerary: [
+      "01 #Lane 749,Yuyuan RoacDecoding Years of Wind and Frost Fun stories愚园路749弄，解码110年的风霜趣事",
+      "02 #The Fisherman VilageIts past life and present life are actually!related to an oldl渔光村:它的前生金世与一部老电影有关",
+      "03 #Butterfly VillageTnaheRepubic ofchinamale celebrities蝶村:民国女星的风风雨雨",
+      "04 #siming vila Imcaesimme ointiare stepping四明别墅:走进历史长河",
+      "05 #fFormer Eastern Economic LibrarThe Eastern Economic Secret Realm in jing'anOld Western style House东方经济图书馆旧址:静安老洋房里的东方经济秘境06 #Liulin VilaHiding the endless charm of old Shanghai柳林别业:藏着老上海道不尽的风情08# : Box Moment/Unicorn Voice: Welcome tothe Magic Box Space, extract your blind box",
+      "07 #Bubbling Well LaneLike a Spanish palace castle涌泉坊:彷佛一座西班牙宫殿城堡",
+      "wtnessthe exaeeerated adaton of floos anda hundred years of fire safety history静安寺救火会:见证夸张的加层与百年消防史",
+      "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+    ],
+    included: [
+      "1.One exquisite poster",
+      "2.Sweet to speak of, in-depthexplanation of professional English by the leader",
+      "3.Super cute photographer records the entire process",
+      "4.Unicorn items: draw blind boxes/gifts",
+      "5.Safety accompanies you on your journey"
+    ],
+    notIncluded: [
+      "Lunch",
+      "Personal expenses"
+    ],
+    notice: [
+      "Please bring comfortable walking shoes and yoga attire.",
+      "Itinerary may adjust slightly due to weather conditions."
+    ],
+    extra: "This retreat is suitable for all fitness levels. Children above 10 years old are welcome with adult supervision.",
+    accommodation: {
+      name: "Boutique Guesthouse",
+      rating: 5,
+      description: "Charming guesthouse with mountain views and modern amenities."
+    },
+    transportation: {
+      type: "High-Speed Train & Local Transfer",
+      description: "Efficient train ride and private transfer between stations and guesthouse."
+    },
+    reviews: [
+      {
+        id: 1,
+        name: "Guest C",
+        country: "UK",
+        avatar: "/placeholder.svg?height=80&width=80",
+        rating: 5,
+        date: "May 2025",
+        text: "A truly peaceful experience. Loved the yoga and the scenery!"
+      }
+    ],
+    startDates: [
+      "2025-06-14",
+      "2025-07-12"
+    ],
+    maxGroupSize: 15
   }
 ]
 

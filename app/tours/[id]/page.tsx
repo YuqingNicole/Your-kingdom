@@ -136,7 +136,7 @@ const getTour = (id: string) => {
       reviews: [
         {
           id: 1,
-          name: "Guest A",
+          name: "Guest A", 
           country: "China",
           avatar: "/placeholder.svg?height=80&width=80",
           rating: 5,
@@ -159,6 +159,76 @@ const getTour = (id: string) => {
         "2025-06-01"
       ],
       maxGroupSize: 20
+    },
+    {
+      id: 8,
+      title: "Multidimensional Space City Walk on Yuyuan Road",
+      images: [
+        "/images/ep4/4.png",
+        "/images/ep4/5.png",
+        "/images/ep4/6.jpeg",
+        "/images/ep4/7.png"
+      ],
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
+      reviewCount: 1,
+      price: 30,
+      description: `Escape the city and find peace in the bamboo forests of Moganshan. Enjoy mindful hiking, tea ceremonies, and a sunset yoga session with mountain views. Perfect for those seeking relaxation and renewal.`,
+      itinerary: [
+        {
+          day: 1,
+          title: "Yuyuan Road City Walk",
+          description: "Explore the multidimensional space of Yuyuan Road, discover historical buildings, creative shops, and urban stories.",
+          activities: [
+            "01 #Lane 749,Yuyuan RoacDecoding Years of Wind and Frost Fun stories愚园路749弄，解码110年的风霜趣事",
+            "02 #The Fisherman VilageIts past life and present life are actually!related to an oldl渔光村:它的前生金世与一部老电影有关",
+            "03 #Butterfly VillageTnaheRepubic ofchinamale celebrities蝶村:民国女星的风风雨雨",
+            "04 #siming vila Imcaesimme ointiare stepping四明别墅:走进历史长河",
+            "05 #fFormer Eastern Economic LibrarThe Eastern Economic Secret Realm in jing'anOld Western style House东方经济图书馆旧址:静安老洋房里的东方经济秘境06 #Liulin VilaHiding the endless charm of old Shanghai柳林别业:藏着老上海道不尽的风情08# : Box Moment/Unicorn Voice: Welcome tothe Magic Box Space, extract your blind box",
+            "07 #Bubbling Well LaneLike a Spanish palace castle涌泉坊:彷佛一座西班牙宫殿城堡",
+            "wtnessthe exaeeerated adaton of floos anda hundred years of fire safety history静安寺救火会:见证夸张的加层与百年消防史",
+            "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+          ]
+        }
+      ],
+      included: [
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
+      ],
+      notIncluded: [
+        "Personal expenses",
+        "Lunch"
+      ],
+      notice: [
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
+      ],
+      extra: "Suitable for all ages. Children should be accompanied by adults.",
+      accommodation: null,
+      transportation: {
+        type: "Walking tour",
+        description: "All attractions are within walking distance."
+      },
+      reviews: [
+        {
+          id: 1,
+          name: "Mia",
+          country: "UK",
+          rating: 5,
+          date: "May 2025",
+          text: "A truly peaceful experience. Loved the city walk and the scenery!"
+        }
+      ],
+      startDates: [
+        "2025-06-14",
+        "2025-07-12"
+      ],
+      maxGroupSize: 15
     },
     {
       id: 7,
@@ -373,13 +443,6 @@ export default function TourPage({ params }: { params: { id: string } }) {
                     <CardHeader className="pb-2">
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-4">
-                          <Image
-                            src={review.avatar || "/placeholder.svg"}
-                            alt={review.name}
-                            width={50}
-                            height={50}
-                            className="rounded-full"
-                          />
                           <div>
                             <h3 className="font-medium">{review.name}</h3>
                             <p className="text-sm text-muted-foreground">{review.country}</p>
@@ -465,9 +528,16 @@ export default function TourPage({ params }: { params: { id: string } }) {
               </div>
 
               <div className="flex items-center justify-center gap-2 pt-4">
-  <Button variant="outline" size="sm" className="rounded-full">
-    Contact Us
-  </Button>
+  <a
+    href="https://chat.whatsapp.com/K5X2VEMZHGAFg8Ubvvkt3T"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: "none" }}
+  >
+    <Button variant="outline" size="sm" className="rounded-full">
+      Contact Us
+    </Button>
+  </a>
 </div>
             </CardContent>
           </Card>

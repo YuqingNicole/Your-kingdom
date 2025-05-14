@@ -15,9 +15,9 @@ const routes = [
     label: "Home",
   },
   {
-    href: "/tours",
+    href: "/#tours-section",
     label: "Tours",
-  },
+  }
 
 ]
 
@@ -43,6 +43,19 @@ export default function Navbar() {
                 "text-sm font-medium transition-colors hover:text-primary",
                 pathname === route.href ? "text-primary" : "text-muted-foreground",
               )}
+              onClick={e => {
+                if (route.href.startsWith("/#")) {
+                  e.preventDefault();
+                  const id = route.href.split("#")[1];
+                  const el = document.getElementById(id);
+                  if (el) {
+                    el.scrollIntoView({ behavior: "smooth" });
+                  } else {
+                    // 如果不在当前页面，先跳转首页再滚动
+                    window.location.href = route.href;
+                  }
+                }
+              }}
             >
               {route.label}
             </Link>
