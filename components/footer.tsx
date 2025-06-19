@@ -16,7 +16,7 @@ export default function Footer() {
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-muted-foreground hover:text-primary">
+              <Link href="https://www.instagram.com/yourkingdomchina_travel/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
@@ -44,6 +44,26 @@ export default function Footer() {
               <li>
                 <Link href="/contact" className="text-muted-foreground hover:text-primary">
                   Contact Us
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="space-y-4">
+            <h3 className="text-sm font-bold">Legal</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/privacy-policy" className="text-muted-foreground hover:text-primary">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms-conditions" className="text-muted-foreground hover:text-primary">
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li>
+                <Link href="/refund-policy" className="text-muted-foreground hover:text-primary">
+                  Refund Policy
                 </Link>
               </li>
             </ul>

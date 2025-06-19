@@ -1,3 +1,6 @@
+'use client'
+
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
@@ -9,6 +12,8 @@ import FeaturedTours from "@/components/featured-tours"
 import ExploreToursButton from "../components/explore-tours-button";
 
 export default function Home() {
+  const [filter, setFilter] = useState('all');
+
   return (
     <div className="flex flex-col gap-16 pb-16">
       {/* Hero Section with Carousel */}
@@ -26,51 +31,30 @@ export default function Home() {
       </section>
 
       {/* 其余代码保持不变 */}
-      {/* Search Section */}
+      {/* Fun Options Section */}
       <section className="container">
         <div className="bg-muted rounded-xl p-6 md:p-8">
           <h2 className="text-2xl artistic-title mb-6 text-center artistic-heading">
-            Find Your Perfect Shanghai Experience
+            Choose Your Adventure
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-            <div>
-              <label className="text-sm font-medium mb-2 block">Destination</label>
-              <Select defaultValue="shanghai">
-                <SelectTrigger className="rounded-full">
-                  <SelectValue placeholder="Select destination" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="shanghai">Shanghai</SelectItem>
-                  <SelectItem value="suzhou">Suzhou</SelectItem>
-                  <SelectItem value="hangzhou">Hangzhou</SelectItem>
-                  <SelectItem value="nanjing">Nanjing</SelectItem>
-                </SelectContent>
-              </Select>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div
+              onClick={() => setFilter('all')}
+              className={`block p-6 rounded-lg transition-colors text-center cursor-pointer ${filter === 'all' ? 'bg-primary text-primary-foreground shadow-lg' : 'hover:bg-background/70'}`}>
+              <h3 className="text-xl font-bold artistic-subtitle">🌟 All Tours</h3>
+              <p className={`${filter === 'all' ? 'text-primary-foreground/80' : 'text-muted-foreground'} mt-2`}>See all our popular experiences.</p>
             </div>
-            <div>
-              <label className="text-sm font-medium mb-2 block">Departure Date</label>
-              <div className="relative">
-                <Input type="date" className="w-full rounded-full" />
-              </div>
+            <div
+              onClick={() => setFilter('one-day')}
+              className={`block p-6 rounded-lg transition-colors text-center cursor-pointer ${filter === 'one-day' ? 'bg-primary text-primary-foreground shadow-lg' : 'hover:bg-background/70'}`}>
+              <h3 className="text-xl font-bold artistic-subtitle">🏞️ One-day Trip</h3>
+              <p className={`${filter === 'one-day' ? 'text-primary-foreground/80' : 'text-muted-foreground'} mt-2`}>Explore scenic wonders just outside the city.</p>
             </div>
-            <div>
-              <label className="text-sm font-medium mb-2 block">Duration (Days)</label>
-              <Select defaultValue="3">
-                <SelectTrigger className="rounded-full">
-                  <SelectValue placeholder="Select days" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="1">1 Day</SelectItem>
-                  <SelectItem value="2">2 Days</SelectItem>
-                  <SelectItem value="3">3 Days</SelectItem>
-                  <SelectItem value="5">5 Days</SelectItem>
-                  <SelectItem value="7">7 Days</SelectItem>
-                  <SelectItem value="10">10+ Days</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-            <div className="flex items-end">
-              <Button className="w-full rounded-full">Search Tours</Button>
+            <div
+              onClick={() => setFilter('citywalk')}
+              className={`block p-6 rounded-lg transition-colors text-center cursor-pointer ${filter === 'citywalk' ? 'bg-primary text-primary-foreground shadow-lg' : 'hover:bg-background/70'}`}>
+              <h3 className="text-xl font-bold artistic-subtitle">🏙️ Shanghai Citywalk</h3>
+              <p className={`${filter === 'citywalk' ? 'text-primary-foreground/80' : 'text-muted-foreground'} mt-2`}>Discover hidden gems in the heart of Shanghai.</p>
             </div>
           </div>
         </div>
@@ -84,7 +68,7 @@ export default function Home() {
             Discover our most sought-after experiences in and around Shanghai
           </p>
         </div>
-        <FeaturedTours />
+        <FeaturedTours filter={filter} />
       </section>
 
       {/* Promotion Banner */}

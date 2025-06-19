@@ -8,6 +8,7 @@ import { Clock, MapPin, Star } from "lucide-react"
 export const tours = [
   {
     id: 5,
+    type: "one-day",
     title: "Xiaoshao Ancient Road Symphony with Blue",
     image: "/images/ep1 copy/661744349108_.pic_hd.jpg",
     images: [
@@ -22,8 +23,8 @@ export const tours = [
     location: "Xiaoshan District, Zhejiang",
     rating: 4.8,
     reviewCount: 12,
-    price: 299,
-    popular: false,
+    price: 269,
+    popular: true,
     description: `Moss-Covered Path · A Literary Pilgrimage\nWander along this hidden trail in the heart of Jiangnan’s waterways, where relics like the Southern Song Imperial Trail and Caoshan Temple (est. 964 CE) beckon you to explore the ancient stories of scholars and emperors.\n\nMillennium Military Path · Echoes of History\nWalk the path where the Wu-Yue rivalry of the Spring and Autumn period once raged, straddling Xiaoshan and Shaoxing. Feel the echoes of ancient battles and the fusion of two rich cultures as you journey through history.\n\nTales of Plum Blossoms · Celebrating Ephemeral Beauty\nIn this enchanting place, plum blossoms bloom like poetry. Varieties such as Gongfen (Palace Pink), Zhusha (Cinnabar Red), Lü’e (Jade Calyx), Yudie (Jade Butterfly), and Meiren Mei (Beauty Plum) take turns gracing the landscape, each one a fleeting masterpiece, waiting to bloom again in glory.`,
     itinerary: [
       "07:30 | Depart promptly at 7:30 AM in the center of Shanghai. The journey takes approximately 3 hours, including a 25-minute rest stop at a service area. Onboard briefing by the tour guide.",
@@ -85,6 +86,7 @@ export const tours = [
   },
   {
     id: 6,
+    type: "one-day",
     title: "Ascend to Panoramic Vistas of Masterpiece",
     image: "/images/ep2 copy/3.jpg",
     images: [
@@ -165,6 +167,7 @@ Step into the ancient town of Longmen, a place rich in history. Wander along the
   },
   {
     id: 7,
+    type: "one-day",
     title: "Encountering Fuzhi Mountain",
     image: "/images/ep3 copy/1.jpg",
     images: [
@@ -177,8 +180,8 @@ Step into the ancient town of Longmen, a place rich in history. Wander along the
     location: "Shengzhou, Shaoxing, Zhejiang",
     rating: 4.6,
     reviewCount: 5,
-    price: 249,
-    popular: false,
+    price: 269,
+    popular: true,
     description: `Millennium Terraces · A Witness to Golden Agricultural Culture
 Though it’s not Wuyuan, the most magnificent rapeseed flower sea in Jiangnan can be found on the northern slope of Fuzhi Mountain! These ancient terraces, stretching across 2,300 acres, were built by generations of local farmers who shaped them to fit the natural terrain. The golden fields cascade down from the mountainside, creating a giant oil painting effect, surrounded by mist and clouds.
 
@@ -248,6 +251,7 @@ Dongcheng Ancient Village is named after the famous poet Xie Lingyun from the Ea
   },
   {
     id: 8,
+    type: "citywalk",
     title: "Multidimensional Space City Walk on Yuyuan Road",
     image: "/images/ep4/5.png",
     images: [
@@ -314,13 +318,49 @@ Dongcheng Ancient Village is named after the famous poet Xie Lingyun from the Ea
       "2025-07-12"
     ],
     maxGroupSize: 15
+  },
+  {
+    id: 9,
+    type: "one-day",
+    title: "NEW: Lakeside Serenity Retreat",
+    image: "/placeholder.svg?height=400&width=600",
+    images: ["/placeholder.svg?height=400&width=600"],
+    duration: "1-day trip",
+    location: "Serene Lake",
+    rating: 4.9,
+    reviewCount: 5,
+    price: 499,
+    popular: true,
+    description: "Escape the city and find peace at the serene lakeside. A perfect one-day retreat to rejuvenate your mind and body.",
+    itinerary: ["Morning meditation by the lake.", "Afternoon kayaking.", "Evening bonfire."],
+    included: ["Guide", "Lunch", "Activities"],
+    notIncluded: ["Personal expenses"],
+    notice: ["Bring comfortable clothes."],
+    extra: "A day of pure relaxation.",
+    accommodation: { name: "", rating: 0, description: "" },
+    transportation: { type: "", description: "" },
+    reviews: [],
+    startDates: ["2025-09-01"],
+    maxGroupSize: 10
   }
 ]
 
-export default function FeaturedTours() {
+export default function FeaturedTours({ filter = 'all' }: { filter?: string }) {
+  const displayedTours = tours
+    .filter(tour => tour.popular)
+    .filter(tour => filter === 'all' || tour.type === filter);
+
+  if (displayedTours.length === 0) {
+    return (
+      <div className="text-center py-10">
+        <p className="text-muted-foreground">No tours found for this category. Please select another one!</p>
+      </div>
+    )
+  }
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      {tours.map((tour) => (
+      {displayedTours.map((tour) => (
         <Card key={tour.id} className="overflow-hidden group premium-card border-0">
           <div className="relative h-48">
             <Image
