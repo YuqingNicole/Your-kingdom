@@ -25,9 +25,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# System files
-.DS_Store
-
-# Log files
-*.log

@@ -320,29 +320,296 @@ Dongcheng Ancient Village is named after the famous poet Xie Lingyun from the Ea
     maxGroupSize: 15
   },
   {
-    id: 9,
-    type: "one-day",
-    title: "NEW: Lakeside Serenity Retreat",
-    image: "/placeholder.svg?height=400&width=600",
-    images: ["/placeholder.svg?height=400&width=600"],
-    duration: "1-day trip",
-    location: "Serene Lake",
-    rating: 4.9,
-    reviewCount: 5,
-    price: 499,
-    popular: true,
-    description: "Escape the city and find peace at the serene lakeside. A perfect one-day retreat to rejuvenate your mind and body.",
-    itinerary: ["Morning meditation by the lake.", "Afternoon kayaking.", "Evening bonfire."],
-    included: ["Guide", "Lunch", "Activities"],
-    notIncluded: ["Personal expenses"],
-    notice: ["Bring comfortable clothes."],
-    extra: "A day of pure relaxation.",
-    accommodation: { name: "", rating: 0, description: "" },
-    transportation: { type: "", description: "" },
-    reviews: [],
-    startDates: ["2025-09-01"],
-    maxGroupSize: 10
-  }
+      id: 11,
+      title: "The brief history of Xujiahui:'Its influence across times'",
+      images: [
+        "/images/徐家汇/wps_doc_0.jpeg",
+        "/images/徐家汇/wps_doc_1.jpeg",
+        "/images/徐家汇/wps_doc_2.jpeg",
+        "/images/徐家汇/wps_doc_3.jpeg",
+        "/images/徐家汇/wps_doc_4.jpeg",
+        "/images/徐家汇/wps_doc_5.jpeg",
+        "/images/徐家汇/wps_doc_6.jpeg",
+        "/images/徐家汇/wps_doc_7.jpeg"
+      ],
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
+      reviewCount: 1,
+      price: 30,
+      description: `Escape the city and find peace in the bamboo forests of Moganshan. Enjoy mindful hiking, tea ceremonies, and a sunset yoga session with mountain views. Perfect for those seeking relaxation and renewal.`,
+      itinerary: [
+        {
+          title: "Yuyuan Road City Walk",
+          description: "Explore the multidimensional space of Yuyuan Road, discover historical buildings, creative shops, and urban stories.",
+          activities: [
+            "01 #Lane 749,Yuyuan RoacDecoding Years of Wind and Frost Fun stories愚园路749弄，解码110年的风霜趣事",
+            "02 #The Fisherman VilageIts past life and present life are actually!related to an oldl渔光村:它的前生金世与一部老电影有关",
+            "03 #Butterfly VillageTnaheRepubic ofchinamale celebrities蝶村:民国女星的风风雨雨",
+            "04 #siming vila Imcaesimme ointiare stepping四明别墅:走进历史长河",
+            "05 #fFormer Eastern Economic LibrarThe Eastern Economic Secret Realm in jing'anOld Western style House东方经济图书馆旧址:静安老洋房里的东方经济秘境06 #Liulin VilaHiding the endless charm of old Shanghai柳林别业:藏着老上海道不尽的风情08# : Box Moment/Unicorn Voice: Welcome tothe Magic Box Space, extract your blind box",
+            "07 #Bubbling Well LaneLike a Spanish palace castle涌泉坊:彷佛一座西班牙宫殿城堡",
+            "wtnessthe exaeeerated adaton of floos anda hundred years of fire safety history静安寺救火会:见证夸张的加层与百年消防史",
+            "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+          ]
+        }
+      ],
+      included: [
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
+      ],
+      notIncluded: [
+        "Personal expenses",
+        "Lunch"
+      ],
+      notice: [
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
+      ],
+      extra: "Suitable for all ages. Children should be accompanied by adults.",
+      accommodation: null,
+      transportation: {
+        type: "Walking tour",
+        description: "All attractions are within walking distance."
+      },
+      reviews: [
+        {
+          id: 1,
+          name: "Mia",
+          country: "UK",
+          rating: 5,
+          date: "May 2025",
+          text: "A truly peaceful experience. Loved the city walk and the scenery!"
+        }
+      ],
+      startDates: [
+        "2025-06-14",
+        "2025-07-12"
+      ],
+      maxGroupSize: 15
+  },
+    {
+      id: 12,
+      title: "Defend the civilization of the Haipai era together and write the future book of songs",
+      images: [
+        "/images/ep8/4.png",
+        "/images/ep8/5.png",
+        "/images/ep8/6.jpeg",
+        "/images/ep8/7.png"
+      ],
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
+      reviewCount: 1,
+      price: 30,
+      description: `Escape the city and find peace in the bamboo forests of Moganshan. Enjoy mindful hiking, tea ceremonies, and a sunset yoga session with mountain views. Perfect for those seeking relaxation and renewal.`,
+      itinerary: [
+        {
+          day: 1,
+          title: "Yuyuan Road City Walk",
+          description: "Explore the multidimensional space of Yuyuan Road, discover historical buildings, creative shops, and urban stories.",
+          activities: [
+            "01 #Lane 749,Yuyuan RoacDecoding Years of Wind and Frost Fun stories愚园路749弄，解码110年的风霜趣事",
+            "02 #The Fisherman VilageIts past life and present life are actually!related to an oldl渔光村:它的前生金世与一部老电影有关",
+            "03 #Butterfly VillageTnaheRepubic ofchinamale celebrities蝶村:民国女星的风风雨雨",
+            "04 #siming vila Imcaesimme ointiare stepping四明别墅:走进历史长河",
+            "05 #fFormer Eastern Economic LibrarThe Eastern Economic Secret Realm in jing'anOld Western style House东方经济图书馆旧址:静安老洋房里的东方经济秘境06 #Liulin VilaHiding the endless charm of old Shanghai柳林别业:藏着老上海道不尽的风情08# : Box Moment/Unicorn Voice: Welcome tothe Magic Box Space, extract your blind box",
+            "07 #Bubbling Well LaneLike a Spanish palace castle涌泉坊:彷佛一座西班牙宫殿城堡",
+            "wtnessthe exaeeerated adaton of floos anda hundred years of fire safety history静安寺救火会:见证夸张的加层与百年消防史",
+            "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+          ]
+        }
+      ],
+      included: [
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
+      ],
+      notIncluded: [
+        "Personal expenses",
+        "Lunch"
+      ],
+      notice: [
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
+      ],
+      extra: "Suitable for all ages. Children should be accompanied by adults.",
+      accommodation: null,
+      transportation: {
+        type: "Walking tour",
+        description: "All attractions are within walking distance."
+      },
+      reviews: [
+        {
+          id: 1,
+          name: "Mia",
+          country: "UK",
+          rating: 5,
+          date: "May 2025",
+          text: "A truly peaceful experience. Loved the city walk and the scenery!"
+        }
+      ],
+      startDates: [
+        "2025-06-14",
+        "2025-07-12"
+      ],
+      maxGroupSize: 15
+    },
+    {
+      id: 14,
+      type: "citywalk",
+      title: "Explore Bund's Art Deco Allure",
+      image: "/images/Art Deco/2.png",
+      images: [
+        "/images/Art Deco/1.jpeg",
+        "/images/Art Deco/2.png",
+        "/images/Art Deco/3.jpeg",
+        "/images/Art Deco/4.png"
+      ],
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
+      reviewCount: 1,
+      price: 30,
+      popular: true,
+      description: "On the west bank of the Huangpu River, layers of culture have built layers of Haipai civilization; The sunshine shines on every ART DECO building with aesthetics, and the century old civilization continues to narrate glorious stories; Laughter and witty remarks kept coming from the department building, We will make an appointment in historical time.",
+      activities: [
+        "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+      ],
+      itinerary: [],
+      included: [
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
+      ],
+      notIncluded: [
+        "Personal expenses",
+        "Lunch"
+      ],
+      notice: [
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
+      ],
+      extra: "",
+      accommodation: null,
+      transportation: {
+        type: "",
+        description: ""
+      },
+      reviews: [],
+      startDates: [],
+      maxGroupSize: 0
+    },
+    {
+      id: 16,
+      type: "citywalk",
+      title: "Guard the Spirit of Shanghai's Golden Age, Pen the Next Chapter of Timeless Verse",
+      image: "/images/海派文化/1.png",
+      images: [
+        "/images/海派文化/1.png",
+        "/images/海派文化/2.jpeg",
+        "/images/海派文化/3.jpeg",
+        "/images/海派文化/4.jpeg"
+      ],
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
+      reviewCount: 1,
+      price: 30,
+      popular: true,
+      description: "Shanghai-style culture transcends nostalgia. Embracing the duality of 'bread and roses,' it forges connections between materialism and spirituality, local heritage and global vision, tradition and innovation.",
+      activities: [
+        "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+      ],
+      itinerary: [],
+      included: [
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
+      ],
+      notIncluded: [
+        "Personal expenses",
+        "Lunch"
+      ],
+      notice: [
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
+      ],
+      extra: "",
+      accommodation: null,
+      transportation: {
+        type: "",
+        description: ""
+      },
+      reviews: [],
+      startDates: [],
+      maxGroupSize: 0
+    },
+    {
+      id: 15,
+      type: "citywalk",
+      title: "Xujiahui Chronicles: A Journey Through Shanghai's Historic Crossroads",
+      image: "/images/徐家汇/wps_doc_0.jpeg",
+      images: [
+      "/images/徐家汇/wps_doc_0.jpeg",
+      "/images/徐家汇/wps_doc_1.jpeg",
+      "/images/徐家汇/wps_doc_2.jpeg",
+      "/images/徐家汇/wps_doc_3.jpeg",
+      "/images/徐家汇/wps_doc_4.jpeg",
+      "/images/徐家汇/wps_doc_5.jpeg",
+      "/images/徐家汇/wps_doc_6.jpeg",
+      "/images/徐家汇/wps_doc_7.jpeg"
+    ],
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
+      reviewCount: 1,
+      price: 30,
+      popular: true,
+      description: "This is where Xu Guangqi and Western scholars joined hands across civilizations, where Tushanwan apprentices chiseled through East-West aesthetic barriers with their carving knives, where dragon-headed gargoyles beneath Gothic spires gently clasp the misty rains of Jiangnan. The dome of the Bibliotheca Zi-Ka-Wei cradles whispers between Homeric epics and Eastern classics, while the grooves of Pathe Records' vinyl etch symphonies of Wu dialect love songs and the crescendos of modernity. Under plane trees' dappled light, old chimneys transform into strings of shadow and light, Shikumen textures interlock with French formal gardens—Xujiahui never defines cultural boundaries, but forges beyond East and West through open embrace. For four centuries, this land has proven true confluence requires no compromise, but rather tempers from collision a poetry uniquely worldly.",
+      activities: [
+        "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+      ],
+      itinerary: [],
+      included: [
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
+      ],
+      notIncluded: [
+        "Personal expenses",
+        "Lunch"
+      ],
+      notice: [
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
+      ],
+      extra: "",
+      accommodation: null,
+      transportation: {
+        type: "",
+        description: ""
+      },
+      reviews: [],
+      startDates: [],
+      maxGroupSize: 0
+    }
 ]
 
 export default function FeaturedTours({ filter = 'all' }: { filter?: string }) {

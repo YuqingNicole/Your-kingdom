@@ -654,6 +654,158 @@ const getTour = (id: string) => {
         "2025-07-12"
       ],
       maxGroupSize: 15
+    },
+    {
+      id: 15,
+      title: "Xujiahui Chronicles: A Journey Through Shanghai's Historic Crossroads",
+      images: [
+        "/images/徐家汇/wps_doc_0.jpeg",
+        "/images/徐家汇/wps_doc_1.jpeg",
+        "/images/徐家汇/wps_doc_3.jpeg",
+        "/images/徐家汇/wps_doc_4.jpeg",
+        "/images/徐家汇/wps_doc_5.jpeg",
+        "/images/徐家汇/wps_doc_6.jpeg",
+        "/images/徐家汇/wps_doc_7.jpeg"
+      ],
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
+      reviewCount: 1,
+      price: 30,
+      description: "This is where Xu Guangqi and Western scholars joined hands across civilizations, where Tushanwan apprentices chiseled through East-West aesthetic barriers with their carving knives, where dragon-headed gargoyles beneath Gothic spires gently clasp the misty rains of Jiangnan. The dome of the Bibliotheca Zi-Ka-Wei cradles whispers between Homeric epics and Eastern classics, while the grooves of Pathe Records' vinyl etch symphonies of Wu dialect love songs and the crescendos of modernity. Under plane trees' dappled light, old chimneys transform into strings of shadow and light, Shikumen textures interlock with French formal gardens—Xujiahui never defines cultural boundaries, but forges beyond East and West through open embrace. For four centuries, this land has proven true confluence requires no compromise, but rather tempers from collision a poetry uniquely worldly.",
+      itinerary: [
+        {
+          day: 1,
+          title: "A Journey Through Shanghai's Historic Crossroads",
+          description: "Discover the rich history and cultural fusion of Xujiahui.",
+          activities: [
+            "Explore the Bibliotheca Zi-Ka-Wei",
+            "Admire the unique architecture",
+            "Learn about the area's historical significance"
+          ]
+        }
+      ],
+      included: [
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
+      ],
+      notIncluded: [
+        "Personal expenses",
+        "Lunch"
+      ],
+      notice: [
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
+      ],
+      extra: "Suitable for history and architecture enthusiasts.",
+      accommodation: null,
+      transportation: {
+        type: "Walking",
+        description: "The tour is conducted on foot."
+      },
+      reviews: [],
+      startDates: [],
+      maxGroupSize: 15
+    },
+    {
+      id: 16,
+      type: "citywalk",
+      title: "Guard the Spirit of Shanghai's Golden Age, Pen the Next Chapter of Timeless Verse",
+      image: "/placeholder.svg?height=400&width=600",
+      images: [
+        "/images/海派文化/1.jpeg",
+        "/images/海派文化/2.jpeg",
+        "/images/海派文化/3.jpeg",
+        "/images/海派文化/4.jpeg"
+      ],
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
+      reviewCount: 1,
+      price: 30,
+      popular: true,
+      description: "Shanghai-style culture transcends nostalgia. Embracing the duality of 'bread and roses,' it forges connections between materialism and spirituality, local heritage and global vision, tradition and innovation.",
+      activities: [
+        "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+      ],
+      itinerary: [],
+      included: [
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
+      ],
+      notIncluded: [
+        "Personal expenses",
+        "Lunch"
+      ],
+      notice: [
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
+      ],
+      extra: "",
+      accommodation: null,
+      transportation: {
+        type: "",
+        description: ""
+      },
+      reviews: [],
+      startDates: [],
+      maxGroupSize: 0
+    },
+    {
+      id: 14,
+      type: "citywalk",
+      title: "Explore Bund's Art Deco Allure",
+      image: "/images/Art Deco/2.png",
+      images: [
+        "/images/Art Deco/2.png",
+        "/images/Art Deco/3.jpeg",
+        "/images/Art Deco/4.png",
+        "/images/Art Deco/1.jpeg"
+      ],
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
+      reviewCount: 1,
+      price: 30,
+      popular: true,
+      description: "On the west bank of the Huangpu River, layers of culture have built layers of Haipai civilization; The sunshine shines on every ART DECO building with aesthetics, and the century old civilization continues to narrate glorious stories; Laughter and witty remarks kept coming from the department building, We will make an appointment in historical time.",
+      activities: [
+        "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+      ],
+      itinerary: [],
+      included: [
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
+      ],
+      notIncluded: [
+        "Personal expenses",
+        "Lunch"
+      ],
+      notice: [
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
+      ],
+      extra: "",
+      accommodation: null,
+      transportation: {
+        type: "",
+        description: ""
+      },
+      reviews: [],
+      startDates: [],
+      maxGroupSize: 0
     }
 ];
 return tours.find(t => String(t.id) === String(id));
