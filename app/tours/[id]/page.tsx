@@ -307,130 +307,354 @@ const getTour = (id: string) => {
     },
     {
       id: 9,
-      title: "NEW: Lakeside Serenity Retreat",
-      images: ["/placeholder.svg?height=400&width=600"],
-      duration: "1-day trip",
-      location: "Serene Lake",
-      rating: 4.9,
-      reviewCount: 5,
-      price: 499,
-      description: "Escape the city and find peace at the serene lakeside. A perfect one-day retreat to rejuvenate your mind and body.",
-      itinerary: [
-        {
-          day: 1,
-          title: "A Day of Peace",
-          description: "Relax and rejuvenate by the beautiful lake.",
-          activities: [
-            "Morning meditation by the lake.",
-            "Afternoon kayaking.",
-            "Evening bonfire."
-          ]
-        }
-      ],
-      included: ["Guide", "Lunch", "Activities"],
-      notIncluded: ["Personal expenses"],
-      notice: ["Bring comfortable clothes."],
-      extra: "A day of pure relaxation.",
-      transportation: { type: "Bus", description: "Comfortable transport included." },
-      reviews: [],
-      startDates: ["2025-09-01"],
-      maxGroupSize: 10
-        "Insurance: Travel accident insurance"
-      ],
-      notIncluded: [
-        "Personal expenses",
-        "Gratuities for guide and driver",
-        "Additional meals and drinks",
-        "Single room supplement (RMB 400 if required)"
-      ],
-      notice: [
-        "Physical requirements: Moderate hiking involved, suitable for participants in good health condition",
-        "Packing list: Comfortable walking shoes, warm clothing (temperatures can be 10°C cooler than at the base), rain gear, camera",
-        "Weather notice: Mountain weather is unpredictable; some views may be obscured by clouds or fog",
-        "Altitude: The summit reaches 1,864m; please inform us of any altitude sickness concerns"
-      ],
-      extra: "For environmental protection, please bring reusable water bottles and take all trash with you when descending the mountain.",
-      transportation: {
-        type: "Private Vehicle & Cable Car",
-        description: "Comfortable air-conditioned vehicle for transfers and modern cable cars for mountain ascent/descent."
-      },
-      reviews: [
-        {
-          id: 1,
-          name: "Sophie L.",
-          country: "Australia",
-          avatar: "/placeholder.svg?height=80&width=80",
-          rating: 5,
-          date: "May 2025",
-          text: "Absolutely breathtaking! The sea of clouds at sunrise was worth the early wake-up call. Our guide was incredibly knowledgeable about the history and geology of the area."
-        },
-        {
-          id: 2,
-          name: "Thomas K.",
-          country: "Germany",
-          avatar: "/placeholder.svg?height=80&width=80",
-          rating: 4,
-          date: "April 2025",
-          text: "Amazing experience, though quite crowded at some viewpoints. The ancient villages were a highlight - felt like stepping back in time."
-        }
-      ],
-      startDates: [
-        "2025-06-15",
-        "2025-06-22",
-        "2025-06-29",
-        "2025-07-06"
-      ],
-      maxGroupSize: 15
-    },
-    {
-      id: 8,
-      title: "NEW: Mystery Mountain Expedition",
+      title: "Strolling through the century old Sinan",
       images: [
-        "/placeholder.svg?height=600&width=800"
+        "/images/ep5/4.png",
+        "/images/ep5/5.png",
+        "/images/ep5/6.jpeg",
+        "/images/ep5/7.png"
       ],
-      duration: "2-day trip",
-      location: "Unknown Highlands",
-      rating: 5.0,
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
       reviewCount: 1,
-      price: 999,
-      description: "Be the first to explore the uncharted Mystery Mountain. This is a placeholder tour for ID 8. Please update with real details.",
+      price: 30,
+      description: `Escape the city and find peace in the bamboo forests of Moganshan. Enjoy mindful hiking, tea ceremonies, and a sunset yoga session with mountain views. Perfect for those seeking relaxation and renewal.`,
       itinerary: [
         {
           day: 1,
-          title: "Ascent and Discovery",
-          description: "Begin the journey into the unknown.",
+          title: "Yuyuan Road City Walk",
+          description: "Explore the multidimensional space of Yuyuan Road, discover historical buildings, creative shops, and urban stories.",
           activities: [
-            "Morning departure",
-            "Afternoon hike to base camp"
+            "01 #Lane 749,Yuyuan RoacDecoding Years of Wind and Frost Fun stories愚园路749弄，解码110年的风霜趣事",
+            "02 #The Fisherman VilageIts past life and present life are actually!related to an oldl渔光村:它的前生金世与一部老电影有关",
+            "03 #Butterfly VillageTnaheRepubic ofchinamale celebrities蝶村:民国女星的风风雨雨",
+            "04 #siming vila Imcaesimme ointiare stepping四明别墅:走进历史长河",
+            "05 #fFormer Eastern Economic LibrarThe Eastern Economic Secret Realm in jing'anOld Western style House东方经济图书馆旧址:静安老洋房里的东方经济秘境06 #Liulin VilaHiding the endless charm of old Shanghai柳林别业:藏着老上海道不尽的风情08# : Box Moment/Unicorn Voice: Welcome tothe Magic Box Space, extract your blind box",
+            "07 #Bubbling Well LaneLike a Spanish palace castle涌泉坊:彷佛一座西班牙宫殿城堡",
+            "wtnessthe exaeeerated adaton of floos anda hundred years of fire safety history静安寺救火会:见证夸张的加层与百年消防史",
+            "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
           ]
         }
       ],
       included: [
-        "Expert guide",
-        "All meals",
-        "Camping gear"
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
       ],
       notIncluded: [
-        "Personal items"
+        "Personal expenses",
+        "Lunch"
       ],
       notice: [
-        "This is a strenuous and challenging expedition. Participants must be in excellent physical condition."
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
       ],
-      extra: "Adventure awaits!",
+      extra: "Suitable for all ages. Children should be accompanied by adults.",
+      accommodation: null,
       transportation: {
-        type: "4x4 Vehicle",
-        description: "Specialized off-road vehicle to reach the trailhead."
+        type: "Walking tour",
+        description: "All attractions are within walking distance."
+      },
+      reviews: [
+        {
+          id: 1,
+          name: "Mia",
+          country: "UK",
+          rating: 5,
+          date: "May 2025",
+          text: "A truly peaceful experience. Loved the city walk and the scenery!"
+        }
+      ],
+      startDates: [
+        "2025-06-14",
+        "2025-07-12"
+      ],
+      maxGroupSize: 15
+    },
+    {
+      id: 10,
+      title: "The brief history of Xujiahui:'Its influence across times'",
+      images: [
+        "/images/ep6/4.png",
+        "/images/ep6/5.png",
+        "/images/ep6/6.jpeg",
+        "/images/ep6/7.png"
+      ],
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
+      reviewCount: 1,
+      price: 30,
+      description: `Escape the city and find peace in the bamboo forests of Moganshan. Enjoy mindful hiking, tea ceremonies, and a sunset yoga session with mountain views. Perfect for those seeking relaxation and renewal.`,
+      itinerary: [
+        {
+          day: 1,
+          title: "Yuyuan Road City Walk",
+          description: "Explore the multidimensional space of Yuyuan Road, discover historical buildings, creative shops, and urban stories.",
+          activities: [
+            "01 #Lane 749,Yuyuan RoacDecoding Years of Wind and Frost Fun stories愚园路749弄，解码110年的风霜趣事",
+            "02 #The Fisherman VilageIts past life and present life are actually!related to an oldl渔光村:它的前生金世与一部老电影有关",
+            "03 #Butterfly VillageTnaheRepubic ofchinamale celebrities蝶村:民国女星的风风雨雨",
+            "04 #siming vila Imcaesimme ointiare stepping四明别墅:走进历史长河",
+            "05 #fFormer Eastern Economic LibrarThe Eastern Economic Secret Realm in jing'anOld Western style House东方经济图书馆旧址:静安老洋房里的东方经济秘境06 #Liulin VilaHiding the endless charm of old Shanghai柳林别业:藏着老上海道不尽的风情08# : Box Moment/Unicorn Voice: Welcome tothe Magic Box Space, extract your blind box",
+            "07 #Bubbling Well LaneLike a Spanish palace castle涌泉坊:彷佛一座西班牙宫殿城堡",
+            "wtnessthe exaeeerated adaton of floos anda hundred years of fire safety history静安寺救火会:见证夸张的加层与百年消防史",
+            "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+          ]
+        }
+      ],
+      included: [
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
+      ],
+      notIncluded: [
+        "Personal expenses",
+        "Lunch"
+      ],
+      notice: [
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
+      ],
+      extra: "Suitable for all ages. Children should be accompanied by adults.",
+      accommodation: null,
+      transportation: {
+        type: "Walking tour",
+        description: "All attractions are within walking distance."
+      },
+      reviews: [
+        {
+          id: 1,
+          name: "Mia",
+          country: "UK",
+          rating: 5,
+          date: "May 2025",
+          text: "A truly peaceful experience. Loved the city walk and the scenery!"
+        }
+      ],
+      startDates: [
+        "2025-06-14",
+        "2025-07-12"
+      ],
+      maxGroupSize: 15
+    },
+    {
+      id: 11,
+      title: "Exploring the beauty of Art Deco Group buildings on the Bund",
+      images: [
+        "/images/ep7/4.png",
+        "/images/ep7/5.png",
+        "/images/ep7/6.jpeg",
+        "/images/ep7/7.png"
+      ],
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
+      reviewCount: 1,
+      price: 30,
+      description: `Escape the city and find peace in the bamboo forests of Moganshan. Enjoy mindful hiking, tea ceremonies, and a sunset yoga session with mountain views. Perfect for those seeking relaxation and renewal.`,
+      itinerary: [
+        {
+          day: 1,
+          title: "Yuyuan Road City Walk",
+          description: "Explore the multidimensional space of Yuyuan Road, discover historical buildings, creative shops, and urban stories.",
+          activities: [
+            "01 #Lane 749,Yuyuan RoacDecoding Years of Wind and Frost Fun stories愚园路749弄，解码110年的风霜趣事",
+            "02 #The Fisherman VilageIts past life and present life are actually!related to an oldl渔光村:它的前生金世与一部老电影有关",
+            "03 #Butterfly VillageTnaheRepubic ofchinamale celebrities蝶村:民国女星的风风雨雨",
+            "04 #siming vila Imcaesimme ointiare stepping四明别墅:走进历史长河",
+            "05 #fFormer Eastern Economic LibrarThe Eastern Economic Secret Realm in jing'anOld Western style House东方经济图书馆旧址:静安老洋房里的东方经济秘境06 #Liulin VilaHiding the endless charm of old Shanghai柳林别业:藏着老上海道不尽的风情08# : Box Moment/Unicorn Voice: Welcome tothe Magic Box Space, extract your blind box",
+            "07 #Bubbling Well LaneLike a Spanish palace castle涌泉坊:彷佛一座西班牙宫殿城堡",
+            "wtnessthe exaeeerated adaton of floos anda hundred years of fire safety history静安寺救火会:见证夸张的加层与百年消防史",
+            "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+          ]
+        }
+      ],
+      included: [
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
+      ],
+      notIncluded: [
+        "Personal expenses",
+        "Lunch"
+      ],
+      notice: [
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
+      ],
+      extra: "Suitable for all ages. Children should be accompanied by adults.",
+      accommodation: null,
+      transportation: {
+        type: "Walking tour",
+        description: "All attractions are within walking distance."
+      },
+      reviews: [
+        {
+          id: 1,
+          name: "Mia",
+          country: "UK",
+          rating: 5,
+          date: "May 2025",
+          text: "A truly peaceful experience. Loved the city walk and the scenery!"
+        }
+      ],
+      startDates: [
+        "2025-06-14",
+        "2025-07-12"
+      ],
+      maxGroupSize: 15
+    },
+    {
+      id: 12,
+      title: "Defend the civilization of the Haipai era together and write the future book of songs",
+      images: [
+        "/images/ep8/4.png",
+        "/images/ep8/5.png",
+        "/images/ep8/6.jpeg",
+        "/images/ep8/7.png"
+      ],
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
+      reviewCount: 1,
+      price: 30,
+      description: `Escape the city and find peace in the bamboo forests of Moganshan. Enjoy mindful hiking, tea ceremonies, and a sunset yoga session with mountain views. Perfect for those seeking relaxation and renewal.`,
+      itinerary: [
+        {
+          day: 1,
+          title: "Yuyuan Road City Walk",
+          description: "Explore the multidimensional space of Yuyuan Road, discover historical buildings, creative shops, and urban stories.",
+          activities: [
+            "01 #Lane 749,Yuyuan RoacDecoding Years of Wind and Frost Fun stories愚园路749弄，解码110年的风霜趣事",
+            "02 #The Fisherman VilageIts past life and present life are actually!related to an oldl渔光村:它的前生金世与一部老电影有关",
+            "03 #Butterfly VillageTnaheRepubic ofchinamale celebrities蝶村:民国女星的风风雨雨",
+            "04 #siming vila Imcaesimme ointiare stepping四明别墅:走进历史长河",
+            "05 #fFormer Eastern Economic LibrarThe Eastern Economic Secret Realm in jing'anOld Western style House东方经济图书馆旧址:静安老洋房里的东方经济秘境06 #Liulin VilaHiding the endless charm of old Shanghai柳林别业:藏着老上海道不尽的风情08# : Box Moment/Unicorn Voice: Welcome tothe Magic Box Space, extract your blind box",
+            "07 #Bubbling Well LaneLike a Spanish palace castle涌泉坊:彷佛一座西班牙宫殿城堡",
+            "wtnessthe exaeeerated adaton of floos anda hundred years of fire safety history静安寺救火会:见证夸张的加层与百年消防史",
+            "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+          ]
+        }
+      ],
+      included: [
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
+      ],
+      notIncluded: [
+        "Personal expenses",
+        "Lunch"
+      ],
+      notice: [
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
+      ],
+      extra: "Suitable for all ages. Children should be accompanied by adults.",
+      accommodation: null,
+      transportation: {
+        type: "Walking tour",
+        description: "All attractions are within walking distance."
+      },
+      reviews: [
+        {
+          id: 1,
+          name: "Mia",
+          country: "UK",
+          rating: 5,
+          date: "May 2025",
+          text: "A truly peaceful experience. Loved the city walk and the scenery!"
+        }
+      ],
+      startDates: [
+        "2025-06-14",
+        "2025-07-12"
+      ],
+      maxGroupSize: 15
+    },
+    {
+      id: 12,
+      title: "Decoding the multidimensional time and space of Shanghai's modern revolutionary history",
+      images: [
+        "/images/ep9/4.png",
+        "/images/ep9/5.png",
+        "/images/ep9/6.jpeg",
+        "/images/ep9/7.png"
+      ],
+      duration: "3 hours tour",
+      location: "Shanghai",
+      rating: 4.9,
+      reviewCount: 1,
+      price: 30,
+      description: `Escape the city and find peace in the bamboo forests of Moganshan. Enjoy mindful hiking, tea ceremonies, and a sunset yoga session with mountain views. Perfect for those seeking relaxation and renewal.`,
+      itinerary: [
+        {
+          day: 1,
+          title: "Yuyuan Road City Walk",
+          description: "Explore the multidimensional space of Yuyuan Road, discover historical buildings, creative shops, and urban stories.",
+          activities: [
+            "01 #Lane 749,Yuyuan RoacDecoding Years of Wind and Frost Fun stories愚园路749弄，解码110年的风霜趣事",
+            "02 #The Fisherman VilageIts past life and present life are actually!related to an oldl渔光村:它的前生金世与一部老电影有关",
+            "03 #Butterfly VillageTnaheRepubic ofchinamale celebrities蝶村:民国女星的风风雨雨",
+            "04 #siming vila Imcaesimme ointiare stepping四明别墅:走进历史长河",
+            "05 #fFormer Eastern Economic LibrarThe Eastern Economic Secret Realm in jing'anOld Western style House东方经济图书馆旧址:静安老洋房里的东方经济秘境06 #Liulin VilaHiding the endless charm of old Shanghai柳林别业:藏着老上海道不尽的风情08# : Box Moment/Unicorn Voice: Welcome tothe Magic Box Space, extract your blind box",
+            "07 #Bubbling Well LaneLike a Spanish palace castle涌泉坊:彷佛一座西班牙宫殿城堡",
+            "wtnessthe exaeeerated adaton of floos anda hundred years of fire safety history静安寺救火会:见证夸张的加层与百年消防史",
+            "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+          ]
+        }
+      ],
+      included: [
+        "One exquisite poster",
+        "Sweet to speak of, in-depth explanation of professional ",
+        "English by the leader",
+        "Super cute photographer records the entire process",
+        "Unicorn items: draw blind boxes/gifts",
+        "Safety accompanies you on your journey"
+      ],
+      notIncluded: [
+        "Personal expenses",
+        "Lunch"
+      ],
+      notice: [
+        "Please wear comfortable walking shoes.",
+        "Tour will proceed rain or shine."
+      ],
+      extra: "Suitable for all ages. Children should be accompanied by adults.",
+      accommodation: null,
+      transportation: {
+        type: "Walking tour",
+        description: "All attractions are within walking distance."
+      },
+      reviews: [
+        {
+          id: 1,
+          name: "Mia",
+          country: "UK",
+          rating: 5,
+          date: "May 2025",
+          text: "A truly peaceful experience. Loved the city walk and the scenery!"
+        }
+      ],
+      startDates: [
+        "2025-06-14",
+        "2025-07-12"
+      ],
+      maxGroupSize: 15
     }
-  ],
-  included: ["Guide", "Lunch", "Activities"],
-  notIncluded: ["Personal expenses"],
-  notice: ["Bring comfortable clothes."],
-  extra: "A day of pure relaxation.",
-  transportation: { type: "Bus", description: "Comfortable transport included." },
-  reviews: [],
-  startDates: ["2025-09-01"],
-  maxGroupSize: 10
-}
 ];
 return tours.find(t => String(t.id) === String(id));
 }
