@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
           <div className="space-y-4">
             <h3 className="text-sm font-bold">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-3 text-base font-cormorant">
               <li>
                 <Link href="/tours" className="text-muted-foreground hover:text-primary">
                   Tours
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
           <div className="space-y-4">
             <h3 className="text-sm font-bold">Legal</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-3 text-base font-cormorant">
               <li>
                 <Link href="/privacy-policy" className="text-muted-foreground hover:text-primary">
                   Privacy Policy

@@ -55,6 +55,7 @@ export default function Home() {
               className={`block p-6 rounded-lg transition-colors text-center cursor-pointer ${filter === 'citywalk' ? 'bg-primary text-primary-foreground shadow-lg' : 'hover:bg-background/70'}`}>
               <h3 className="text-xl font-bold artistic-subtitle">🏙️ Shanghai Citywalk</h3>
               <p className={`${filter === 'citywalk' ? 'text-primary-foreground/80' : 'text-muted-foreground'} mt-2`}>Discover hidden gems in the heart of Shanghai.</p>
+              <p className="text-sm font-semibold mt-2 text-green-500">Surprise bundle price: Choose any three Citywalks for $85!</p>
             </div>
           </div>
         </div>

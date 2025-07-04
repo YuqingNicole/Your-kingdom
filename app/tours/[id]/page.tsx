@@ -61,7 +61,7 @@ const getTour = (id: string) => {
       reviews: [
         {
           id: 1,
-          name: "Guest A",
+          name: "Yiwen",
           country: "China",
           avatar: "/placeholder.svg?height=80&width=80",
           rating: 5,
@@ -70,7 +70,7 @@ const getTour = (id: string) => {
         },
         {
           id: 2,
-          name: "Guest B",
+          name: "Emma",
           country: "USA",
           avatar: "/placeholder.svg?height=80&width=80",
           rating: 4,
@@ -849,7 +849,7 @@ export default function TourPage({ params }: { params: { id: string } }) {
                 <span className="text-muted-foreground">({tour.reviewCount} reviews)</span>
               </div>
             </div>
-            <p className="text-muted-foreground artistic-subtitle">{tour.description}</p>
+            <div className="text-muted-foreground artistic-subtitle whitespace-pre-line">{tour.description}</div>
           </div>
 
           <div className="relative h-[400px] mb-4 rounded-lg overflow-hidden">
@@ -979,37 +979,13 @@ export default function TourPage({ params }: { params: { id: string } }) {
               <CardTitle className="artistic-title">Book This Tour</CardTitle>
               <CardDescription className="artistic-subtitle">Select your preferred date and options</CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-6">
               <div>
                 <div className="text-2xl font-bold mb-1 artistic-title">${tour.price}</div>
                 <div className="text-sm text-muted-foreground">per person</div>
               </div>
 
-              <div className="space-y-2">
-                <label className="text-sm font-medium">Departure Date</label>
-                <select className="w-full p-2 border rounded-full">
-                  {tour.startDates.map((date, index) => (
-                    <option key={index} value={date}>
-                      {new Date(date).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })}
-                    </option>
-                  ))}
-                </select>
-              </div>
 
-              <div className="space-y-2">
-                <label className="text-sm font-medium">Number of Travelers</label>
-                <select className="w-full p-2 border rounded-full">
-                  {Array.from({ length: 10 }).map((_, i) => (
-                    <option key={i} value={i + 1}>
-                      {i + 1} {i === 0 ? "person" : "people"}
-                    </option>
-                  ))}
-                </select>
-              </div>
 
               <div className="pt-4 border-t">
                 <div className="flex justify-between mb-2">
