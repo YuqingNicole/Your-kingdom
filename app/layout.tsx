@@ -5,6 +5,7 @@ import "./globals.css"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
+import Script from "next/script"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -46,6 +47,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
+        <script src="//code.tidio.co/vablwy6wad6fms8gfg7awkqcegcfjl95.js" async></script>
       </body>
     </html>
   )

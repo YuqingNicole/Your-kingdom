@@ -1013,7 +1013,7 @@ export default function TourPage({ params }: { params: { id: string } }) {
     style={{ textDecoration: "none" }}
   >
     <Button variant="outline" size="sm" className="rounded-full">
-      Contact Us
+      Contact Us to Book
     </Button>
   </a>
 </div>
