@@ -52,17 +52,17 @@ export default function Footer() {
             <h3 className="text-sm font-bold">Legal</h3>
             <ul className="space-y-3 text-base font-cormorant">
               <li>
-                <Link href="/privacy-policy" className="text-muted-foreground hover:text-primary">
+                <Link href="/" className="text-muted-foreground hover:text-primary">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms-conditions" className="text-muted-foreground hover:text-primary">
+                <Link href="/" className="text-muted-foreground hover:text-primary">
                   Terms & Conditions
                 </Link>
               </li>
               <li>
-                <Link href="/refund-policy" className="text-muted-foreground hover:text-primary">
+                <Link href="/" className="text-muted-foreground hover:text-primary">
                   Refund Policy
                 </Link>
               </li>
