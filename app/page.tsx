@@ -1,5 +1,4 @@
 'use client'
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -37,7 +36,7 @@ export default function Home() {
           <h2 className="text-2xl artistic-title mb-6 text-center artistic-heading">
             Choose Your Adventure
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <div
               onClick={() => setFilter('all')}
               className={`block p-6 rounded-lg transition-colors text-center cursor-pointer ${filter === 'all' ? 'bg-primary text-primary-foreground shadow-lg' : 'hover:bg-background/70'}`}>
@@ -56,6 +55,12 @@ export default function Home() {
               <h3 className="text-xl font-bold artistic-subtitle">🏙️ Shanghai Citywalk</h3>
               <p className={`${filter === 'citywalk' ? 'text-primary-foreground/80' : 'text-muted-foreground'} mt-2`}>Discover hidden gems in the heart of Shanghai.</p>
               <p className="text-sm font-semibold mt-2 text-green-500">Surprise bundle price: Choose any three Citywalks for $85!</p>
+            </div>
+            <div
+              onClick={() => setFilter('multi-day')}
+              className={`block p-6 rounded-lg transition-colors text-center cursor-pointer ${filter === 'multi-day' ? 'bg-primary text-primary-foreground shadow-lg' : 'hover:bg-background/70'}`}>
+              <h3 className="text-xl font-bold artistic-subtitle">🗺️ Multi-day Tours</h3>
+              <p className={`${filter === 'multi-day' ? 'text-primary-foreground/80' : 'text-muted-foreground'} mt-2`}>Go on an in-depth journey to explore more.</p>
             </div>
           </div>
         </div>

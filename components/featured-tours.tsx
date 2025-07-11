@@ -7,7 +7,7 @@ import { Clock, MapPin, Star } from "lucide-react"
 
 export const tours = [
   {
-    id: 5,
+    id: 1,
     type: "one-day",
     title: "Xiaoshao Ancient Road Symphony with Blue",
     image: "/images/ep1 copy/661744349108_.pic_hd.jpg",
@@ -26,6 +26,7 @@ export const tours = [
     price: 269,
     popular: true,
     description: `Moss-Covered Path · A Literary Pilgrimage\nWander along this hidden trail in the heart of Jiangnan’s waterways, where relics like the Southern Song Imperial Trail and Caoshan Temple (est. 964 CE) beckon you to explore the ancient stories of scholars and emperors.\n\nMillennium Military Path · Echoes of History\nWalk the path where the Wu-Yue rivalry of the Spring and Autumn period once raged, straddling Xiaoshan and Shaoxing. Feel the echoes of ancient battles and the fusion of two rich cultures as you journey through history.\n\nTales of Plum Blossoms · Celebrating Ephemeral Beauty\nIn this enchanting place, plum blossoms bloom like poetry. Varieties such as Gongfen (Palace Pink), Zhusha (Cinnabar Red), Lü’e (Jade Calyx), Yudie (Jade Butterfly), and Meiren Mei (Beauty Plum) take turns gracing the landscape, each one a fleeting masterpiece, waiting to bloom again in glory.`,
+    whatMakesThisTourUnique: ["江南古道与宋代遗迹，赏千年梅花，体验历史与自然融合的徒步之旅。"],
     itinerary: [
       "07:30 | Depart promptly at 7:30 AM in the center of Shanghai. The journey takes approximately 3 hours, including a 25-minute rest stop at a service area. Onboard briefing by the tour guide.",
       "11:00 | Arrive in Xiaoshan. Embark on the 'Journey of Sincerity,' starting from Liandong Village. The first leg follows the ancient secret trail used by the Yue army during their night raid against the Wu Kingdom in the Spring and Autumn period, where moss-covered stone steps whisper tales of history. Pass through cultural landmarks such as the Eastern Jin Dynasty-era Yunmen Temple and Northern Song Dynasty-era Caoshan Temple. Pause to savor the 'King Yue Zen Tea' beneath a thousand-year-old ginkgo tree. Ascend to the summit of Kanpo Ridge Boundary Monument, where you stand on one foot in Xiaoshan and the other in Shaoxing.",
@@ -85,7 +86,7 @@ export const tours = [
     maxGroupSize: 20
   },
   {
-    id: 6,
+    id: 2,
     type: "one-day",
     title: "Ascend to Panoramic Vistas of Masterpiece",
     image: "/images/ep2 copy/3.jpg",
@@ -166,7 +167,7 @@ Step into the ancient town of Longmen, a place rich in history. Wander along the
     maxGroupSize: 20
   },
   {
-    id: 7,
+    id: 3,
     type: "one-day",
     title: "Encountering Fuzhi Mountain",
     image: "/images/ep3 copy/1.jpg",
@@ -182,14 +183,7 @@ Step into the ancient town of Longmen, a place rich in history. Wander along the
     reviewCount: 5,
     price: 269,
     popular: true,
-    description: `Millennium Terraces · A Witness to Golden Agricultural Culture
-Though it’s not Wuyuan, the most magnificent rapeseed flower sea in Jiangnan can be found on the northern slope of Fuzhi Mountain! These ancient terraces, stretching across 2,300 acres, were built by generations of local farmers who shaped them to fit the natural terrain. The golden fields cascade down from the mountainside, creating a giant oil painting effect, surrounded by mist and clouds.
 
-Glacier Stone Waves · A Rock Climbing Geological Wonder
-The stone wave formations on Fuzhi Mountain are the largest discovered in China’s low-latitude, low-altitude regions, making it a true natural wonder. These stone waves were formed by glaciers around 3 million years ago and are scattered across the northwest and northeast slopes of the mountain. The longest wave stretches up to 1,500 meters. Climb these stone waves with both hands and feet, and feel the ancient geological history that’s millions of years old.
-
-Century-Old Village · A Hidden Trekking Escape in the Mountains
-Dongcheng Ancient Village is named after the famous poet Xie Lingyun from the Eastern Jin dynasty, who wrote the famous poem, “Climbing this mountain, drinking wine and writing poetry, after drinking, I turn the cup.” The village is full of old houses, roads, and trees, with stone paths winding through terraced fields and bamboo forests. It offers a glimpse of century-old mountain life. If you have time, visit the old teahouse at the village entrance, sip some fresh tea, and listen to the villagers’ stories.`,
     itinerary: [
       "07:30 | Depart Shanghai, chasing the morning light. Route: Shanghai → Jiaxing-Shaoxing Bridge Service Area →Fengjing Service Area (25-minute break; dining and coffee options available) → Fuzhi Mountain, Shaoxing",
       "11:45 | Arrive at the trailhead village. An ancient village cradled by terraced fields.",
@@ -266,16 +260,18 @@ Dongcheng Ancient Village is named after the famous poet Xie Lingyun from the Ea
     reviewCount: 1,
     price: 30,
     popular: true,
-    description: `Decoding the Multidimensional Time and Space of Modern Shanghai Revolutionary History.`,
+
     itinerary: [
-      "01 #Lane 749,Yuyuan RoacDecoding Years of Wind and Frost Fun stories愚园路749弄，解码110年的风霜趣事",
-      "02 #The Fisherman VilageIts past life and present life are actually!related to an oldl渔光村:它的前生金世与一部老电影有关",
-      "03 #Butterfly VillageTnaheRepubic ofchinamale celebrities蝶村:民国女星的风风雨雨",
-      "04 #siming vila Imcaesimme ointiare stepping四明别墅:走进历史长河",
-      "05 #fFormer Eastern Economic LibrarThe Eastern Economic Secret Realm in jing'anOld Western style House东方经济图书馆旧址:静安老洋房里的东方经济秘境06 #Liulin VilaHiding the endless charm of old Shanghai柳林别业:藏着老上海道不尽的风情08# : Box Moment/Unicorn Voice: Welcome tothe Magic Box Space, extract your blind box",
-      "07 #Bubbling Well LaneLike a Spanish palace castle涌泉坊:彷佛一座西班牙宫殿城堡",
-      "wtnessthe exaeeerated adaton of floos anda hundred years of fire safety history静安寺救火会:见证夸张的加层与百年消防史",
-      "10#Paramount MetropolisFamous, once the social center of shangha百乐门大都会:大名鼎鼎，曾是上海的社交中心"
+      "01 #Lane 749,Yuyuan RoacDecoding Years of Wind and Frost Fun stories",
+      "02 #The Fisherman VilageIts past life and present life are actually!related to an oldl",
+      "03 #Butterfly VillageTnaheRepubic ofchinamale celebrities",
+      "04 #siming vila Imcaesimme ointiare stepping",
+      "05 #Former Eastern Economic LibrarThe Eastern Economic Secret Realm in jing'anOld Western style House",
+      "06 #Liulin VilaHiding the endless charm of old Shanghai",
+      "08# : Box Moment/Unicorn Voice: Welcome tothe Magic Box Space, extract your blind box",
+      "07 #Bubbling Well LaneLike a Spanish palace castle",
+      "wtnessthe exaeeerated adaton of floos anda hundred years of fire safety history",
+      "10#Paramount MetropolisFamous, once the social center of shanghai"
     ],
     included: [
       "1.One exquisite poster",
